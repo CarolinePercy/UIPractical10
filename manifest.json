@@ -1,0 +1,28 @@
+{
+    "name": "Caroline's PWA App",
+    "short_name": "Caroline PWA",
+
+    "icons": [{
+        "src": "img/icons/MoterIconL2.png",
+        "sizes": "150x150",
+        "type": "image/png"
+        },
+      {
+        "src": "img/icons/MoterIconL.png",
+        "sizes": "150x150",
+        "type": "image/png",
+        "purpose": "any maskable"
+        },
+      {
+        "src": "img/icons/MoterIconXL.png",
+        "sizes": "520x520",
+        "type": "image/png"
+        }],
+
+    "theme_color": "#ffffff",
+    "background_color": "#000000",
+    "display": "minimal-ui",
+    "orientation": "landscape",
+    "scope": "/",
+    "start_url": "/index.html"
+}

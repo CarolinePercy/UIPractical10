@@ -1,0 +1,34 @@
+img{
+    width: 100%;
+}
+.button {
+    background-color: #000000;
+    border: none;
+    padding: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.button:hover {
+    background-color: #3f3f3f;
+}
+
+.red{
+    color: #FF0000;
+}
+
+.green{
+    color: #00FF00;
+}
+
+.blue{
+    color: #0000FF;
+}
+
+.yellow{
+    color: #FFFF00;
+}
+
+.round {
+    border-radius: 50%;
+}

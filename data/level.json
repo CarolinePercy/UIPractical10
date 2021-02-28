@@ -1,0 +1,40 @@
+{
+	"player":
+  {
+		"position":
+    {
+			"x": 35,
+			"y": 35
+		},
+
+		"size":
+    {
+			"x": 97,
+			"y": 93,
+			"scale": 4
+		},
+
+    "image": "./img/Motorcycle.png"
+
+	},
+
+	"fireRing":
+  {
+		"position":
+    {
+			"x": 240,
+			"y": 70
+		},
+
+		"size":
+    {
+			"x": 50,
+			"y": 50,
+			"scale": 8
+
+		},
+
+    "image" : "./img/ringOfFire.png"
+
+	}
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GameLoop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 GameLoop Template">
+    <meta name="author" content="UI Programming">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="white" />
+    <link rel="apple-touch-icon" href="img/icons/MotorIconL.png">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="./css/push.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+
+<body onload="onPageLoad()">
+  <h1 id="score"></h1></br>
+    <canvas tabindex="0" id="game" width="300" height="200" style="border: black 1px solid;">
+        Oops! looks like your browser does not support canvas tag
+    </canvas>
+
+    <audio src="./sfx/Cheer.mp3" id="Cheers">
+        Oops! looks like your browser does not support audio tag
+    </audio>
+
+    <audio src="./sfx/ButtonSound.wav" id="ButtonSound">
+        Oops! looks like your browser does not support audio tag
+    </audio>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button onmousedown="input('Up')" class="button yellow round" onmouseup="input('None')">Y</button></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><button onmousedown="input('Left')" class="button blue round"onmouseup="input('None')">X</button></td>
+                <td>&nbsp;</td>
+                <td><button onmousedown="input('Right')" class="button red round"onmouseup="input('None')">B</button></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button onmousedown="input('Down')" class="button green round"onmouseup="input('None')">A</button></td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+        <td colspan="3" align="center">
+          <div class="custom-select" style="width:200px;">
+            <select id="equipment" onchange="riderSelect()"></select>
+            <label for="equipment">Biker Select</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center">
+          <label for="active" class="switch">
+            <input id="active" onclick="mirrorFire()" type="checkbox">Fire Toggle
+            <span class="toggle"></span>
+          </label>
+        </td>
+      </tr>
+        </tbody>
+    </table>
+
+</body>
+
+    <!--JavaScript File-->
+    <script src="./js/script.js"></script>
+    <script src="./register.js"></script>
+</html>
