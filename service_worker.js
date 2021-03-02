@@ -1,6 +1,8 @@
 var cacheName = 'bikeGame-pwa';
 var filesToCache = [
   '/',
+  '/img/ringOfFire.png',
+  '/img/Motorcycle.png',
   '/index.html',
   '/css/push.css',
   '/js/script.js'
@@ -10,6 +12,7 @@ var filesToCache = [
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
+      console.log("testing if its in here");
       return cache.addAll(filesToCache);
     })
   );
